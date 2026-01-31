@@ -41,6 +41,25 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+.winter {
+  /* Winter Chill Theme */
+
+  --background: 188 53% 82%;     /* icy light blue */
+  --foreground: 188 65% 12%;     /* deep teal */
+
+  --card: 191 18% 64%;
+  --card-foreground: 188 65% 12%;
+
+  --primary: 188 25% 41%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 191 18% 64%;
+  --secondary-foreground: 188 65% 12%;
+
+  --border: 188 25% 41%;
+  --ring: 188 25% 41%;
+}
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
