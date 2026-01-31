@@ -1,10 +1,23 @@
 :root {
-  /* Winter Chill Palette */
-  --color-bg: #B8E3E9;
-  --color-surface: #93B1B5;
-  --color-primary: #4F7C82;
-  --color-dark: #0B2E33;
+  /* ===== Winter Chill Theme ===== */
 
-  --color-text-light: #ffffff;
-  --color-text-dark: #0B2E33;
+  /* Background & text */
+  --background: 188 53% 82%;     /* #B8E3E9 */
+  --foreground: 188 65% 12%;     /* #0B2E33 */
+
+  /* Surfaces / cards */
+  --card: 191 18% 64%;           /* #93B1B5 */
+  --card-foreground: 188 65% 12%;
+
+  /* Primary actions */
+  --primary: 188 25% 41%;        /* #4F7C82 */
+  --primary-foreground: 0 0% 100%;
+
+  /* Secondary */
+  --secondary: 191 18% 64%;
+  --secondary-foreground: 188 65% 12%;
+
+  /* Borders & focus */
+  --border: 188 25% 41%;
+  --ring: 188 25% 41%;
 }
