@@ -167,7 +167,7 @@ export function Students() {
                   <TableCell>{student.class}</TableCell>
                   <TableCell>{student.department}</TableCell>
                   <TableCell>
-                    <Badge variant={student.status === 'Active' ? 'default' : 'secondary'}>
+                    <Badge className="p-2" variant={student.status === 'Active' ? 'default' : 'secondary'}>
                       {student.status}
                     </Badge>
                   </TableCell>

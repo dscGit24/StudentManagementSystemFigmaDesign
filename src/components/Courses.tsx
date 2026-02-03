@@ -127,7 +127,7 @@ export function Courses() {
                     <p className="text-sm text-slate-600">{course.code}</p>
                   </div>
                 </div>
-                <Badge variant={course.status === 'Active' ? 'default' : 'secondary'}>
+                <Badge className="p-2" variant={course.status === 'Active' ? 'default' : 'secondary'}>
                   {course.status}
                 </Badge>
               </div>
@@ -153,7 +153,7 @@ export function Courses() {
 
               <div className="pt-2">
                 <p className="text-sm text-slate-600">Department</p>
-                <Badge variant="outline">{course.department}</Badge>
+                <Badge className="p-2" variant="outline">{course.department}</Badge>
               </div>
 
               <div className="flex gap-2 pt-2">
