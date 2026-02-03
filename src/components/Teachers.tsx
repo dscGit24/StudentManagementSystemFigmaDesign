@@ -102,7 +102,7 @@ export function Teachers() {
             <CardTitle className="text-sm text-slate-600">Total Teachers</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-slate-900">{mockTeachers.length}</div>
+            <div className="text-slate-800">{mockTeachers.length}</div>
           </CardContent>
         </Card>
 
@@ -111,7 +111,7 @@ export function Teachers() {
             <CardTitle className="text-sm text-slate-600">Active</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-green-600">
+            <div className="text-green-400">
               {mockTeachers.filter(t => t.status === 'Active').length}
             </div>
           </CardContent>
@@ -122,7 +122,7 @@ export function Teachers() {
             <CardTitle className="text-sm text-slate-600">Total Courses</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-blue-600">
+            <div className="text-blue-400">
               {mockTeachers.reduce((sum, t) => sum + t.courses, 0)}
             </div>
           </CardContent>
@@ -133,7 +133,7 @@ export function Teachers() {
             <CardTitle className="text-sm text-slate-600">Avg. Experience</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-slate-900">11.3 years</div>
+            <div className="text-slate-800">11.3 years</div>
           </CardContent>
         </Card>
       </div>
