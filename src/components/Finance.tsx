@@ -63,7 +63,7 @@ export function Finance() {
           </CardHeader>
           <CardContent>
             <div className="text-slate-900">${totalRevenue.toLocaleString()}</div>
-            <div className="flex items-center gap-1 text-xs text-green-600 mt-1">
+            <div className="flex items-center gap-1 text-xs text-green-400 mt-1">
               <TrendingUp className="h-3 w-3" />
               +12% from last month
             </div>
@@ -76,8 +76,8 @@ export function Finance() {
             <DollarSign className="h-4 w-4 text-slate-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-orange-600">${totalPending.toLocaleString()}</div>
-            <div className="flex items-center gap-1 text-xs text-red-600 mt-1">
+            <div className="text-orange-400">${totalPending.toLocaleString()}</div>
+            <div className="flex items-center gap-1 text-xs text-red-400 mt-1">
               <TrendingDown className="h-3 w-3" />
               3 students overdue
             </div>
@@ -90,7 +90,7 @@ export function Finance() {
             <DollarSign className="h-4 w-4 text-slate-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-green-600">{collectionRate}%</div>
+            <div className="text-green-400">{collectionRate}%</div>
             <p className="text-xs text-slate-600 mt-1">Above target</p>
           </CardContent>
         </Card>
@@ -120,8 +120,8 @@ export function Finance() {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="revenue" fill="#10b981" name="Revenue" />
-              <Bar dataKey="expenses" fill="#ef4444" name="Expenses" />
+              <Bar dataKey="revenue" fill="#AFE1AF" name="Revenue" />
+              <Bar dataKey="expenses" fill="#F88379" name="Expenses" />
             </BarChart>
           </ResponsiveContainer>
         </CardContent>
@@ -178,12 +178,12 @@ export function Finance() {
                   <TableCell className="text-slate-900">{payment.name}</TableCell>
                   <TableCell>{payment.class}</TableCell>
                   <TableCell>${payment.totalFee.toLocaleString()}</TableCell>
-                  <TableCell className="text-green-600">${payment.paid.toLocaleString()}</TableCell>
-                  <TableCell className={payment.pending > 0 ? 'text-orange-600' : 'text-slate-900'}>
+                  <TableCell className="text-green-400">${payment.paid.toLocaleString()}</TableCell>
+                  <TableCell className={payment.pending > 0 ? 'text-orange-400' : 'text-slate-800'}>
                     ${payment.pending.toLocaleString()}
                   </TableCell>
                   <TableCell>
-                    <Badge
+                    <Badge className="p-2"
                       variant={
                         payment.status === 'Paid'
                           ? 'default'

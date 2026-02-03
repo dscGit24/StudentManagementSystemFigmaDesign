@@ -187,13 +187,13 @@ export function Teachers() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <Badge variant="outline">{teacher.department}</Badge>
+                    <Badge className="p-2" variant="outline">{teacher.department}</Badge>
                   </TableCell>
                   <TableCell>{teacher.subject}</TableCell>
                   <TableCell>{teacher.experience}</TableCell>
                   <TableCell>{teacher.courses} courses</TableCell>
                   <TableCell>
-                    <Badge variant={teacher.status === 'Active' ? 'default' : 'secondary'}>
+                    <Badge className="p-2" variant={teacher.status === 'Active' ? 'default' : 'secondary'}>
                       {teacher.status}
                     </Badge>
                   </TableCell>

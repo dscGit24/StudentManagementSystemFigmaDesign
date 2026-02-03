@@ -68,7 +68,7 @@ export function Grades() {
             <CardTitle className="text-sm text-slate-600">A+ Grade</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-green-600">2 Students</div>
+            <div className="text-green-400">2 Students</div>
             <p className="text-xs text-slate-600 mt-1">40% of class</p>
           </CardContent>
         </Card>
@@ -78,7 +78,7 @@ export function Grades() {
             <CardTitle className="text-sm text-slate-600">Highest Score</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-blue-600">95%</div>
+            <div className="text-blue-400">95%</div>
             <p className="text-xs text-slate-600 mt-1">Emily Davis</p>
           </CardContent>
         </Card>
@@ -88,7 +88,7 @@ export function Grades() {
             <CardTitle className="text-sm text-slate-600">Pass Rate</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-green-600">100%</div>
+            <div className="text-green-400">100%</div>
             <p className="text-xs text-slate-600 mt-1">All students passing</p>
           </CardContent>
         </Card>
@@ -158,22 +158,22 @@ export function Grades() {
                   <TableCell>{student.rollNo}</TableCell>
                   <TableCell className="text-slate-900">{student.name}</TableCell>
                   <TableCell>
-                    <span className={student.math >= 90 ? 'text-green-600' : student.math >= 80 ? 'text-blue-600' : 'text-slate-900'}>
+                    <span className={student.math >= 90 ? 'text-green-400' : student.math >= 80 ? 'text-blue-400' : 'text-slate-800'}>
                       {student.math}%
                     </span>
                   </TableCell>
                   <TableCell>
-                    <span className={student.science >= 90 ? 'text-green-600' : student.science >= 80 ? 'text-blue-600' : 'text-slate-900'}>
+                    <span className={student.science >= 90 ? 'text-green-400' : student.science >= 80 ? 'text-blue-400' : 'text-slate-800'}>
                       {student.science}%
                     </span>
                   </TableCell>
                   <TableCell>
-                    <span className={student.english >= 90 ? 'text-green-600' : student.english >= 80 ? 'text-blue-600' : 'text-slate-900'}>
+                    <span className={student.english >= 90 ? 'text-green-400' : student.english >= 80 ? 'text-blue-400' : 'text-slate-800'}>
                       {student.english}%
                     </span>
                   </TableCell>
                   <TableCell>
-                    <span className={student.history >= 90 ? 'text-green-600' : student.history >= 80 ? 'text-blue-600' : 'text-slate-900'}>
+                    <span className={student.history >= 90 ? 'text-green-400' : student.history >= 80 ? 'text-blue-400' : 'text-slate-800'}>
                       {student.history}%
                     </span>
                   </TableCell>
@@ -181,7 +181,7 @@ export function Grades() {
                     {student.average}%
                   </TableCell>
                   <TableCell>
-                    <Badge variant={getGradeColor(student.grade)}>
+                    <Badge className="p-2" variant={getGradeColor(student.grade)}>
                       {student.grade}
                     </Badge>
                   </TableCell>

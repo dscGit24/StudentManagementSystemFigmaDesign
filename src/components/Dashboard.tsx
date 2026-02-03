@@ -25,7 +25,7 @@ const departmentData = [
   { name: 'Engineering', value: 40 },
 ];
 
-const COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444'];
+const COLORS = ['#89CFF0', '#AFE1AF', '#FFE5B4', '#F88379'];
 
 export function Dashboard() {
   return (
@@ -96,8 +96,8 @@ export function Dashboard() {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="present" fill="#10b981" name="Present" />
-                <Bar dataKey="absent" fill="#ef4444" name="Absent" />
+                <Bar dataKey="present" fill="#AFE1AF" name="Present" />
+                <Bar dataKey="absent" fill="#F88379" name="Absent" />
               </BarChart>
             </ResponsiveContainer>
           </CardContent>
@@ -115,7 +115,7 @@ export function Dashboard() {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="students" stroke="#3b82f6" strokeWidth={2} />
+                <Line type="monotone" dataKey="students" stroke="#6F8FAF" strokeWidth={2} />
               </LineChart>
             </ResponsiveContainer>
           </CardContent>
@@ -155,7 +155,7 @@ export function Dashboard() {
           <CardContent>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="h-2 w-2 rounded-full bg-blue-600 mt-2" />
+                <div className="h-2 w-2 rounded-full bg-blue-400 mt-2" />
                 <div className="flex-1">
                   <p className="text-sm text-slate-900">New student enrolled</p>
                   <p className="text-xs text-slate-600">Sarah Johnson - Computer Science</p>
@@ -163,7 +163,7 @@ export function Dashboard() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="h-2 w-2 rounded-full bg-green-600 mt-2" />
+                <div className="h-2 w-2 rounded-full bg-green-400 mt-2" />
                 <div className="flex-1">
                   <p className="text-sm text-slate-900">Course completed</p>
                   <p className="text-xs text-slate-600">Advanced Mathematics - Grade 12</p>
@@ -171,7 +171,7 @@ export function Dashboard() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="h-2 w-2 rounded-full bg-yellow-600 mt-2" />
+                <div className="h-2 w-2 rounded-full bg-yellow-400 mt-2" />
                 <div className="flex-1">
                   <p className="text-sm text-slate-900">Fee payment received</p>
                   <p className="text-xs text-slate-600">Michael Chen - $2,500</p>
@@ -179,7 +179,7 @@ export function Dashboard() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="h-2 w-2 rounded-full bg-purple-600 mt-2" />
+                <div className="h-2 w-2 rounded-full bg-purple-400 mt-2" />
                 <div className="flex-1">
                   <p className="text-sm text-slate-900">New teacher added</p>
                   <p className="text-xs text-slate-600">Dr. Robert Smith - Physics</p>

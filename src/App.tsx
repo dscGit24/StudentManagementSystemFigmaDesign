@@ -40,7 +40,7 @@ export default function App() {
     <SidebarProvider>
       <div className="flex h-screen w-full">
         <AppSidebar activeModule={activeModule} setActiveModule={setActiveModule} />
-        <main className="flex-1 overflow-auto bg-slate-50">
+        <main className="flex-1 overflow-auto bg-background">
           {renderModule()}
         </main>
       </div>

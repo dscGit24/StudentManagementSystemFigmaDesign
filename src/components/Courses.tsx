@@ -119,8 +119,8 @@ export function Courses() {
             <CardHeader>
               <div className="flex items-start justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100">
-                    <BookOpen className="h-5 w-5 text-blue-600" />
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/50">
+                    <BookOpen className="h-5 w-5 text-slate-600" />
                   </div>
                   <div>
                     <CardTitle className="text-slate-900">{course.name}</CardTitle>

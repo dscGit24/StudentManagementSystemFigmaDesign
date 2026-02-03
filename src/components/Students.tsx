@@ -272,7 +272,7 @@ export function Students() {
                         <Edit className="h-4 w-4" />
                       </Button>
                       <Button variant="ghost" size="sm">
-                        <Trash2 className="h-4 w-4 text-red-600" />
+                        <Trash2 className="h-4 w-4 text-wine" />
                       </Button>
                     </div>
                   </TableCell>

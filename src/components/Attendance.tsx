@@ -50,7 +50,7 @@ export function Attendance() {
             <CardTitle className="text-sm text-slate-600">Total Students</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-slate-900">{attendanceData.length}</div>
+            <div className="text-slate-800">{attendanceData.length}</div>
           </CardContent>
         </Card>
 
@@ -59,7 +59,7 @@ export function Attendance() {
             <CardTitle className="text-sm text-slate-600">Present</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-green-600">{presentCount}</div>
+            <div className="text-green-400">{presentCount}</div>
           </CardContent>
         </Card>
 
@@ -68,7 +68,7 @@ export function Attendance() {
             <CardTitle className="text-sm text-slate-600">Absent</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-red-600">{absentCount}</div>
+            <div className="text-red-400">{absentCount}</div>
           </CardContent>
         </Card>
 
@@ -77,7 +77,7 @@ export function Attendance() {
             <CardTitle className="text-sm text-slate-600">Attendance Rate</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-blue-600">{attendanceRate}%</div>
+            <div className="text-blue-400">{attendanceRate}%</div>
           </CardContent>
         </Card>
       </div>
@@ -145,7 +145,7 @@ export function Attendance() {
                   <TableCell>{record.class}</TableCell>
                   <TableCell>{record.time}</TableCell>
                   <TableCell>
-                    <Badge
+                    <Badge className="p-2"
                       variant={
                         record.status === 'present'
                           ? 'default'

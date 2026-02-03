@@ -46,7 +46,7 @@ export function AppSidebar({ activeModule, setActiveModule }: AppSidebarProps) {
           </div>
           <div>
             <h2 className="font-semibold text-slate-900">EduManage</h2>
-            <p className="text-xs text-slate-500">Student Management</p>
+            <p className="text-xs text-slate-200">Student Management</p>
           </div>
         </div>
       </SidebarHeader>
