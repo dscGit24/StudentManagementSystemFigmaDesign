@@ -41,9 +41,9 @@ export function AppSidebar({ activeModule, setActiveModule }: AppSidebarProps) {
     <Sidebar>
       <SidebarHeader className="border-b p-4">
         <div className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600 text-white">
+          {/* <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600 text-white">
             <GraduationCap className="h-6 w-6" />
-          </div>
+          </div> */}
           <div>
             <h2 className="font-semibold text-slate-900">EduManage</h2>
             <p className="text-xs text-slate-200">Student Management</p>
