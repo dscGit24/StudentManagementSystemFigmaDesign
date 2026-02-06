@@ -45,7 +45,7 @@ export function AppSidebar({ activeModule, setActiveModule }: AppSidebarProps) {
             <GraduationCap className="h-6 w-6" />
           </div> */}
           <div>
-            <h2 className="font-semibold text-xl text-slate-900">MyERP</h2>
+            <h2 className="font-semibold text-3xl text-slate-900">MyERP</h2>
             <p className="text-xs text-slate-200">Student Management</p>
           </div>
         </div>
